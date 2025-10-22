@@ -29,26 +29,19 @@ const skillCategories = [
   }
 ];
 
-const achievements = [
-  "🏆 1st Place - Inspire Ideathon (Brain Teaser)",
-  "🏆 1st Place - UVEC Hackathon (MathMagician)",
-  "🎓 Bachelor of Engineering in Software Engineering - UVic (2022-2026)",
-  "🔬 Research Assistant - SOLIDS Lab, Cybersecurity Team"
-];
-
 const Skills = () => {
   return (
     <section id="skills" className="py-20 px-4">
       <div className="container max-w-6xl mx-auto">
         <div className="space-y-4 mb-12 text-center animate-slide-up">
-          <h2 className="text-4xl font-bold tracking-tight">Skills & Education</h2>
+          <h2 className="text-4xl font-bold tracking-tight">Technical Skills</h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Technical competencies and academic achievements
+            Technical competencies across software engineering, cloud, and AI
           </p>
         </div>
         
         {/* Skills Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {skillCategories.map((category, index) => (
             <Card 
               key={index} 
@@ -75,21 +68,6 @@ const Skills = () => {
             </Card>
           ))}
         </div>
-        
-        {/* Achievements */}
-        <Card className="p-6 md:p-8 bg-card border-border animate-fade-in">
-          <h3 className="text-2xl font-semibold mb-6">Education & Achievements</h3>
-          <div className="grid md:grid-cols-2 gap-4">
-            {achievements.map((achievement, index) => (
-              <div 
-                key={index} 
-                className={`flex items-start gap-3 p-4 rounded-lg bg-muted/50 hover:bg-muted transition-colors animate-slide-up opacity-0 stagger-${index + 1}`}
-              >
-                <span className="text-lg">{achievement}</span>
-              </div>
-            ))}
-          </div>
-        </Card>
       </div>
     </section>
   );

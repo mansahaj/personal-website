@@ -16,9 +16,9 @@ const Navigation = () => {
 
   const navLinks = [
     { href: "#experience", label: "Experience" },
-    { href: "#hackathons", label: "Hackathons" },
-    { href: "#projects", label: "Projects" },
     { href: "#skills", label: "Skills" },
+    { href: "#projects", label: "Projects" },
+    { href: "#hackathons", label: "Hackathons" },
     { href: "#contact", label: "Contact" },
   ];
 

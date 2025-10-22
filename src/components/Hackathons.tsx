@@ -5,32 +5,83 @@ import { Trophy, Calendar, Users, Github } from "lucide-react";
 
 const hackathons = [
   {
+    title: "NASA Space Apps Challenge 2025",
+    event: "NASA Hackathon - Exoplanet Detection",
+    achievement: "🏆 Top-Tier Ranking",
+    date: "February 2025",
+    description: "Led a 4-member team to build a machine learning pipeline for detecting and classifying exoplanets using NASA's Kepler KOI dataset. Achieved 96% accuracy with TensorFlow and scikit-learn, reducing manual analysis time by 70% through an interactive Streamlit dashboard.",
+    tech: ["Python", "TensorFlow", "scikit-learn", "Streamlit", "Data Science"],
+    highlights: [
+      "96% accuracy on exoplanet classification",
+      "Validated across 10,000+ samples",
+      "70% reduction in manual analysis time",
+      "Top-tier ranking for innovation in planetary science"
+    ],
+    link: "https://github.com/mansahaj/NASA_Hackathon2025",
+    teamSize: 4
+  },
+  {
+    title: "Studium Programming Language",
+    event: "UVEC 2025",
+    achievement: "Innovation Award Recognition",
+    date: "January 2025",
+    description: "Developed an interpreted educational programming language for beginners using Python and Lark. Built a complete lexer-parser-AST-evaluator pipeline with 500+ test programs executed with 0 runtime errors. Authored a formal 20-page EBNF grammar specification.",
+    tech: ["Python", "Lark", "Compiler Design", "EBNF", "Language Design"],
+    highlights: [
+      "Complete interpreter with 0 runtime errors",
+      "Inspired 50+ students in language design",
+      "Formal grammar specification and type checking",
+      "Recognized for educational innovation"
+    ],
+    link: "https://github.com/TalentedB/Slick",
+    teamSize: 1
+  },
+  {
     title: "BridgeCare",
     event: "Island Health Codehack Hackathon",
-    achievement: "Project Winner",
+    achievement: "🏆 Project Winner",
     date: "March 2024",
     description: "Built a comprehensive website to improve communication between hospital staff and caregivers. Featured real-time notification system and AI chatbot for better patient care coordination.",
     tech: ["Svelte", "CSS", "Bootstrap", "JavaScript", "Git"],
     highlights: [
       "Real-time notification system",
       "AI-powered chatbot integration",
-      "Collaborative Git workflow with frontend & backend teams"
+      "Collaborative Git workflow with frontend & backend teams",
+      "Healthcare communication solution"
     ],
     link: "https://github.com/mansahaj/bridgecare",
     teamSize: 4
   },
   {
+    title: "AWS DeepRacer",
+    event: "InnovateWEST Hackathon",
+    achievement: "🏅 Top 5 Finish",
+    date: "April 2024",
+    description: "Coded the AWS DeepRacer - an autonomous race car driven by reinforcement learning. Created custom rewards function and trained the model on AWS cloud infrastructure. Achieved a lap completion rate of 10.18 seconds and placed in the top 5 racers.",
+    tech: ["Python", "AWS", "Reinforcement Learning", "Machine Learning"],
+    highlights: [
+      "Top 5 finish among all competitors",
+      "10.18 second lap completion time",
+      "Custom reward function design",
+      "AWS cloud training experience"
+    ],
+    link: "https://github.com/mansahaj/RL_awsdeepracer",
+    teamSize: 1
+  },
+  {
     title: "Brain Teaser",
-    event: "Inspire Ideathon",
-    achievement: "🏆 1st Place Winner",
+    event: "Inspire No-Code Ideathon",
+    achievement: "🏆 1st Place Winner ($300)",
     date: "January 2024",
-    description: "Designed an innovative web app for neurodivergent students to have a more accessible college life, focusing on task management and procrastination solutions.",
+    description: "Designed an innovative web app for neurodivergent students to have a more accessible college life, focusing on task management and procrastination solutions. Won first prize and $300 award.",
     tech: ["Figma", "Canva", "UI/UX Design", "Project Planning"],
     highlights: [
-      "Won first prize among all competing teams",
+      "Won first prize and $300 cash award",
       "Focus on accessibility and inclusive design",
-      "Creative pitch and design proposal"
+      "Creative pitch and design proposal",
+      "Neurodiversity-focused solution"
     ],
+    link: "https://www.canva.com/design/DAF6_QwJxqM/view",
     teamSize: 3
   },
   {
@@ -43,24 +94,42 @@ const hackathons = [
     highlights: [
       "Won first place in the competition",
       "Gamified learning experience",
-      "Full-stack web game development"
+      "Full-stack web game development",
+      "Educational entertainment fusion"
     ],
     link: "https://github.com/arfazhxss/MathMagician",
     teamSize: 4
   },
   {
-    title: "AWS DeepRacer",
-    event: "InnovateWEST Hackathon",
-    achievement: "Participant",
-    date: "April 2024",
-    description: "Coded the AWS DeepRacer - an autonomous race car driven by reinforcement learning. Created custom rewards function and trained the model on AWS cloud infrastructure.",
-    tech: ["Python", "AWS", "Reinforcement Learning", "Machine Learning"],
+    title: "UVIC Website",
+    event: "UVEC 8-Hour Coding Competition",
+    achievement: "🏅 4th Place",
+    date: "2023",
+    description: "Developed a comprehensive website using HTML and CSS on Replit, integrating the Google Maps API for enhanced functionality. Collaborated with team members in real-time to brainstorm innovative features and enhance user experience.",
+    tech: ["HTML", "CSS", "JavaScript", "Google Maps API", "Replit"],
     highlights: [
-      "Hands-on reinforcement learning",
-      "AWS cloud training experience",
-      "Autonomous vehicle programming"
+      "4th place in 8-hour competition",
+      "Google Maps API integration",
+      "Real-time collaborative development",
+      "Enhanced campus navigation"
     ],
-    link: "https://github.com/mansahaj"
+    link: "https://github.com/mansahaj/UVIC-website",
+    teamSize: 3
+  },
+  {
+    title: "Optimizing Fire Hall Placement",
+    event: "University Competition",
+    achievement: "🏅 4th Place",
+    date: "2024",
+    description: "Engineered two fire hall placement algorithms to maximize coverage with minimal resources. Implemented a grid-based circle-packing algorithm and K-means clustering solution for scalable placements, achieving optimal coverage for 63 (1964), 100 (2005), and 134 (2011) fire halls.",
+    tech: ["Python", "Geopy", "PyProj", "Matplotlib", "Plotly", "K-means"],
+    highlights: [
+      "4th place presentation award",
+      "Dual algorithm approach (circle-packing + K-means)",
+      "Data-driven city planning solution",
+      "Real-world scalability validation"
+    ],
+    teamSize: 3
   }
 ];
 
@@ -179,20 +248,20 @@ const Hackathons = () => {
         {/* Stats */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-12 animate-fade-in">
           <Card className="p-6 text-center bg-card/50 backdrop-blur-sm border-border">
-            <div className="text-3xl font-bold gradient-text">4+</div>
+            <div className="text-3xl font-bold gradient-text">8+</div>
             <div className="text-sm text-muted-foreground mt-1">Hackathons</div>
           </Card>
           <Card className="p-6 text-center bg-card/50 backdrop-blur-sm border-border">
-            <div className="text-3xl font-bold gradient-text">2</div>
+            <div className="text-3xl font-bold gradient-text">4</div>
             <div className="text-sm text-muted-foreground mt-1">First Places</div>
           </Card>
           <Card className="p-6 text-center bg-card/50 backdrop-blur-sm border-border">
-            <div className="text-3xl font-bold gradient-text">15+</div>
+            <div className="text-3xl font-bold gradient-text">20+</div>
             <div className="text-sm text-muted-foreground mt-1">Team Members</div>
           </Card>
           <Card className="p-6 text-center bg-card/50 backdrop-blur-sm border-border">
-            <div className="text-3xl font-bold gradient-text">48h</div>
-            <div className="text-sm text-muted-foreground mt-1">Avg Duration</div>
+            <div className="text-3xl font-bold gradient-text">$300</div>
+            <div className="text-sm text-muted-foreground mt-1">Prize Won</div>
           </Card>
         </div>
       </div>

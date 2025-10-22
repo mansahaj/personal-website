@@ -6,33 +6,53 @@ import { ExternalLink, Github } from "lucide-react";
 const projects = [
   {
     title: "Federated Learning IDS",
-    subtitle: "Secure Underwater Communication Research",
-    description: "Creating an Intrusion Detection System for distributed underwater drone networks using TensorFlow and Flower framework. Implementing federated learning for decentralized machine learning with enhanced data privacy for the SOLIDS Lab.",
-    tech: ["Python", "TensorFlow", "Flower", "Machine Learning", "Cybersecurity"],
+    subtitle: "Secure Underwater Communication Research - SOLIDS Lab",
+    description: "Creating an Intrusion Detection System for distributed underwater drone networks using TensorFlow and Flower framework. Implementing federated learning for decentralized machine learning with enhanced data privacy. Conducting threat modeling using Threat Dragon to expose vulnerabilities.",
+    tech: ["Python", "TensorFlow", "Flower", "Threat Dragon", "Cybersecurity", "ML"],
     link: "https://github.com/mansahaj/FederatedLearning",
-    year: "Ongoing",
+    year: "Sep 2022 - Present",
+    featured: true
+  },
+  {
+    title: "INSPIRE Platform",
+    subtitle: "Brightspace-Integrated Learning Platform",
+    description: "Collaborating with a cross-functional team to develop a platform for 22,000+ students, focusing on neurodiverse learners. Built AI-driven study tools and task management features using React.js and Node.js, improving task efficiency by 20%. Interviewed 180+ students through pilot sessions and surveys.",
+    tech: ["React.js", "Node.js", "Firebase", "REST APIs", "Brightspace API"],
+    link: "https://www.uvic.ca/research/centres/cisur/projects/inspire/index.php",
+    year: "Sep 2024 - Present",
     featured: true
   },
   {
     title: "Sport Match",
-    subtitle: "Sports Social Media Platform",
-    description: "A comprehensive sports social media application designed to help people find other players to play with. Features include a league system, player matching algorithms, and social networking capabilities for building local sports communities.",
-    tech: ["MySQL", "Kotlin", "Python", "Git"],
-    link: "https://github.com/paramsbhs/370-Group-Project",
+    subtitle: "Sports Social Media Database Platform",
+    description: "A comprehensive sports social media database application designed to help people find other players to play with. Features include a league system, player matching algorithms, team management, and social networking capabilities for building local sports communities using MySQL and Kotlin.",
+    tech: ["MySQL", "Kotlin", "Python", "Android", "Database Design"],
+    link: "https://github.com/paramsbhs/SportMatch",
     year: "2024",
     featured: true
   },
   {
-    title: "Threat Modeling Suite",
-    subtitle: "SOLIDS Lab Cybersecurity",
-    description: "Using Threat Dragon to conduct comprehensive threat modeling for secure underwater communication web applications, identifying and documenting vulnerabilities in the system architecture.",
-    tech: ["Threat Dragon", "Cybersecurity", "Risk Assessment"],
-    year: "Ongoing"
+    title: "ArtMake",
+    subtitle: "Generative Art Program",
+    description: "Developed a Python program that generates aesthetically pleasing random art pieces. Implemented an object-oriented approach to dynamically create HTML webpages, utilizing the Random library to generate random shapes of varying sizes and colors, then rendering them onto the HTML canvas as SVGs.",
+    tech: ["Python", "SVG", "OOP", "HTML", "Random Generation"],
+    link: "https://github.com/mansahaj/artmake",
+    year: "April 2024",
+    featured: false
+  },
+  {
+    title: "Indeed Web Scraper",
+    subtitle: "Job Search Automation Tool",
+    description: "Built a web-scraper for the Indeed website to enable easier job search. Used Pandas, Selenium, Beautiful Soup and Requests libraries to convert several web pages worth of information into an easier to analyze CSV file, providing users an optimized approach to access job information.",
+    tech: ["Python", "Selenium", "Beautiful Soup", "Pandas", "Web Scraping"],
+    link: "https://github.com/mansahaj",
+    year: "January 2024",
+    featured: false
   },
   {
     title: "Quantum Computing Exploration",
-    subtitle: "Research & Development",
-    description: "Exploring quantum computing applications using Qiskit framework, investigating potential applications in cryptography and optimization problems.",
+    subtitle: "Research & Development with Qiskit",
+    description: "Exploring quantum computing applications using Qiskit framework, investigating potential applications in cryptography and optimization problems. Completed Quantum Software Engineering Bootcamp certification.",
     tech: ["Python", "Qiskit", "Quantum Computing"],
     year: "2024"
   }
