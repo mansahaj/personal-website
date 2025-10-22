@@ -58,7 +58,7 @@ const Experience = () => {
           {experiences.map((exp, index) => (
             <Card 
               key={index} 
-              className={`p-6 md:p-8 card-hover bg-card border-border animate-slide-in-${index % 2 === 0 ? 'left' : 'right'} opacity-0 stagger-${index + 1}`}
+              className="p-6 md:p-8 card-hover bg-card border-border"
             >
               <div className="space-y-4">
                 <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-4">
