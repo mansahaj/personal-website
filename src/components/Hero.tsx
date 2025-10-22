@@ -6,7 +6,7 @@ const Hero = () => {
   return (
     <section className="min-h-screen flex items-center justify-center px-4 py-20 relative overflow-hidden">
       {/* Background gradient effect */}
-      <div className="absolute inset-0 bg-gradient-to-br from-primary-light/5 via-transparent to-accent/5 pointer-events-none" />
+      <div className="absolute inset-0 bg-gradient-to-br from-primary-light/5 via-transparent to-accent/5 pointer-events-none animate-gradient" />
       
       <div className="container max-w-6xl mx-auto relative z-10">
         <div className="grid md:grid-cols-2 gap-12 items-center">

@@ -5,62 +5,47 @@ import { ExternalLink, Github } from "lucide-react";
 
 const projects = [
   {
-    title: "BridgeCare",
-    subtitle: "Island Health Codehack Hackathon",
-    description: "Built a website to improve communication between hospital staff and caregivers, featuring real-time notification system and AI chatbot for better patient care coordination.",
-    tech: ["Svelte", "CSS", "Bootstrap", "JavaScript", "Git"],
-    link: "https://github.com/mansahaj/bridgecare",
-    year: "March 2024"
-  },
-  {
     title: "Federated Learning IDS",
-    subtitle: "Secure Underwater Communication",
-    description: "Created an Intrusion Detection System for distributed underwater drone networks using TensorFlow and Flower framework, implementing federated learning for decentralized machine learning with data privacy.",
+    subtitle: "Secure Underwater Communication Research",
+    description: "Creating an Intrusion Detection System for distributed underwater drone networks using TensorFlow and Flower framework. Implementing federated learning for decentralized machine learning with enhanced data privacy for the SOLIDS Lab.",
     tech: ["Python", "TensorFlow", "Flower", "Machine Learning", "Cybersecurity"],
     link: "https://github.com/mansahaj/FederatedLearning",
-    year: "Ongoing"
-  },
-  {
-    title: "Brain Teaser",
-    subtitle: "1st Place - Inspire Ideathon",
-    description: "Designed a web app for neurodivergent students to have a more accessible college life, focusing on task management and procrastination solutions. Won first prize at the Inspire Ideathon.",
-    tech: ["Figma", "Canva", "UI/UX Design", "Project Planning"],
-    year: "January 2024"
-  },
-  {
-    title: "MathMagician",
-    subtitle: "1st Place - UVEC Hackathon",
-    description: "Collaborated in a team of four to develop a town-saving game where players protect the town from incoming comets by solving math equations. Combined education with engaging gameplay.",
-    tech: ["Next.js", "React", "Tailwind CSS", "Git"],
-    link: "https://github.com/arfazhxss/MathMagician",
-    year: "2024"
-  },
-  {
-    title: "AWS DeepRacer",
-    subtitle: "InnovateWEST Hackathon",
-    description: "Coded the AWS DeepRacer autonomous race car driven by reinforcement learning. Created rewards function and trained the model for several hours on AWS cloud infrastructure.",
-    tech: ["Python", "AWS", "Reinforcement Learning", "Machine Learning"],
-    link: "https://github.com/mansahaj",
-    year: "April 2024"
+    year: "Ongoing",
+    featured: true
   },
   {
     title: "Sport Match",
     subtitle: "Sports Social Media Platform",
-    description: "A sports social media app designed to help people find other players to play with. Features include a league system, player matching, and social networking capabilities.",
+    description: "A comprehensive sports social media application designed to help people find other players to play with. Features include a league system, player matching algorithms, and social networking capabilities for building local sports communities.",
     tech: ["MySQL", "Kotlin", "Python", "Git"],
     link: "https://github.com/paramsbhs/370-Group-Project",
+    year: "2024",
+    featured: true
+  },
+  {
+    title: "Threat Modeling Suite",
+    subtitle: "SOLIDS Lab Cybersecurity",
+    description: "Using Threat Dragon to conduct comprehensive threat modeling for secure underwater communication web applications, identifying and documenting vulnerabilities in the system architecture.",
+    tech: ["Threat Dragon", "Cybersecurity", "Risk Assessment"],
+    year: "Ongoing"
+  },
+  {
+    title: "Quantum Computing Exploration",
+    subtitle: "Research & Development",
+    description: "Exploring quantum computing applications using Qiskit framework, investigating potential applications in cryptography and optimization problems.",
+    tech: ["Python", "Qiskit", "Quantum Computing"],
     year: "2024"
   }
 ];
 
 const Projects = () => {
   return (
-    <section id="projects" className="py-20 px-4">
+    <section id="projects" className="py-20 px-4 bg-muted/30">
       <div className="container max-w-6xl mx-auto">
-        <div className="space-y-4 mb-12 text-center">
-          <h2 className="text-4xl font-bold tracking-tight">Featured Projects</h2>
+        <div className="space-y-4 mb-12 text-center animate-slide-up">
+          <h2 className="text-4xl font-bold tracking-tight">Personal Projects</h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            From hackathon wins to research initiatives, here are some of my key projects
+            Research initiatives, academic projects, and personal explorations in software engineering
           </p>
         </div>
         
@@ -68,12 +53,21 @@ const Projects = () => {
           {projects.map((project, index) => (
             <Card 
               key={index} 
-              className="p-6 card-hover bg-card border-border flex flex-col"
+              className={`p-6 card-hover border-border flex flex-col animate-scale-in opacity-0 stagger-${(index % 4) + 1} ${
+                project.featured ? 'bg-gradient-to-br from-primary/5 to-accent/5' : 'bg-card'
+              }`}
             >
               <div className="space-y-4 flex-1">
                 <div className="space-y-2">
                   <div className="flex items-start justify-between gap-4">
-                    <h3 className="text-2xl font-semibold tracking-tight">{project.title}</h3>
+                    <div className="space-y-1">
+                      <h3 className="text-2xl font-semibold tracking-tight">{project.title}</h3>
+                      {project.featured && (
+                        <Badge variant="secondary" className="text-xs">
+                          Featured
+                        </Badge>
+                      )}
+                    </div>
                     {project.link && (
                       <Button 
                         asChild 

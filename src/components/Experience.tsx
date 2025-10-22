@@ -47,7 +47,7 @@ const Experience = () => {
   return (
     <section id="experience" className="py-20 px-4 bg-muted/30">
       <div className="container max-w-6xl mx-auto">
-        <div className="space-y-4 mb-12 text-center">
+        <div className="space-y-4 mb-12 text-center animate-slide-up">
           <h2 className="text-4xl font-bold tracking-tight">Work Experience</h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             Building innovative solutions across cloud infrastructure, AI-driven platforms, and cybersecurity research
@@ -58,7 +58,7 @@ const Experience = () => {
           {experiences.map((exp, index) => (
             <Card 
               key={index} 
-              className="p-6 md:p-8 card-hover bg-card border-border"
+              className={`p-6 md:p-8 card-hover bg-card border-border animate-slide-in-${index % 2 === 0 ? 'left' : 'right'} opacity-0 stagger-${index + 1}`}
             >
               <div className="space-y-4">
                 <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-4">

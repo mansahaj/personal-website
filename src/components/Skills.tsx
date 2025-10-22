@@ -38,9 +38,9 @@ const achievements = [
 
 const Skills = () => {
   return (
-    <section id="skills" className="py-20 px-4 bg-muted/30">
+    <section id="skills" className="py-20 px-4">
       <div className="container max-w-6xl mx-auto">
-        <div className="space-y-4 mb-12 text-center">
+        <div className="space-y-4 mb-12 text-center animate-slide-up">
           <h2 className="text-4xl font-bold tracking-tight">Skills & Education</h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             Technical competencies and academic achievements
@@ -52,7 +52,7 @@ const Skills = () => {
           {skillCategories.map((category, index) => (
             <Card 
               key={index} 
-              className="p-6 card-hover bg-card border-border"
+              className={`p-6 card-hover bg-card border-border animate-scale-in opacity-0 stagger-${(index % 6) + 1}`}
             >
               <div className="space-y-4">
                 <div className="flex items-center gap-3">
@@ -77,13 +77,13 @@ const Skills = () => {
         </div>
         
         {/* Achievements */}
-        <Card className="p-6 md:p-8 bg-card border-border">
+        <Card className="p-6 md:p-8 bg-card border-border animate-fade-in">
           <h3 className="text-2xl font-semibold mb-6">Education & Achievements</h3>
           <div className="grid md:grid-cols-2 gap-4">
             {achievements.map((achievement, index) => (
               <div 
                 key={index} 
-                className="flex items-start gap-3 p-4 rounded-lg bg-muted/50"
+                className={`flex items-start gap-3 p-4 rounded-lg bg-muted/50 hover:bg-muted transition-colors animate-slide-up opacity-0 stagger-${index + 1}`}
               >
                 <span className="text-lg">{achievement}</span>
               </div>
